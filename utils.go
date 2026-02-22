@@ -135,6 +135,17 @@ func readFraction(v string) (f float64, err error) {
 // getColor is a helper function to get the background color
 // if ReadGradUrl needs it.
 func getColor(clr interface{}) color.Color {
+	result := getColorRaw(clr)
+	if result == nil {
+		result = colornames.Black
+	}
+	return result
+}
+
+func getColorRaw(clr interface{}) color.Color {
+	if clr == nil {
+		return nil
+	}
 	switch c := clr.(type) {
 	case rasterx.Gradient: // This is a bit lazy but oh well
 		for _, s := range c.Stops {

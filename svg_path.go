@@ -93,9 +93,19 @@ func (svgp *SvgPath) GetFillColor() color.Color {
 	return getColor(svgp.fillerColor)
 }
 
+// GetFillColorRaw returns the fill color of SvgPath if one is defined and otherwise, nil
+func (svgp *SvgPath) GegFillColorRaw() color.Color {
+	return getColorRaw(svgp.fillerColor)
+}
+
 // GetLineColor returns the stroke color of the SvgPath if one is defined and otherwise returns colornames.Black
 func (svgp *SvgPath) GetLineColor() color.Color {
 	return getColor(svgp.linerColor)
+}
+
+// GetLineColorRaw returns the stroke color of the SvgPath if one is defined and otherwise, nil
+func (svgp *SvgPath) GetLineColorRaw() color.Color {
+	return getColorRaw(svgp.linerColor)
 }
 
 // SetFillColor sets the fill color of the SvgPath

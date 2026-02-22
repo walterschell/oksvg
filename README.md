@@ -1,3 +1,7 @@
+# Important
+This fork is to expose some internals for github.com/walterschell/go-rasterize. You almost certainly want to use the upstream otherwise.
+
+
 # oksvg
 oksvg is a rasterizer for a partial implementation of the SVG2.0 specification in golang.
 
