@@ -1,4 +1,4 @@
-module github.com/srwiley/oksvg
+module github.com/walterschell/oksvg
 
 go 1.17
 

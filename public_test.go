@@ -6,8 +6,8 @@ import (
 	"image"
 	"testing"
 
-	. "github.com/srwiley/oksvg"
 	. "github.com/srwiley/rasterx"
+	. "github.com/walterschell/oksvg"
 	// . "github.com/srwiley/scanFT"
 )
 
